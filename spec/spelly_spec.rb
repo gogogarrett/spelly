@@ -3,7 +3,7 @@ require_relative "../lib/spelly"
 describe Spelly do
 
   it "should load a dictionary given a language" do
-    Spelly.new("en_GB").dict.should 
+    Spelly.new("en_US").dict.should 
   end
 
   context "#spell_check" do

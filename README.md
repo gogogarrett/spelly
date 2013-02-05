@@ -29,9 +29,10 @@ http://wiki.openoffice.org/wiki/Dictionaries#English_.28AU.2CCA.2CGB.2CNZ.2CUS.2
 
 Then you can run your spell check against an array of words by simply calling
 
+    > spelly = Spelly.new("en_GB")
     > words = %w/car bat yardd/
     => ["car", "bat", "yardd"] 
-    > s.spell_check words
+    > spelly.spell_check words
     => [{:word=>"yardd", :suggest=>["yards", "yard", "yard d"]}] 
 
 ## Contributing
