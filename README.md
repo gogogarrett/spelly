@@ -21,17 +21,15 @@ Or install it yourself as:
 You can create the Spelly object by calling
 
     # passing in the language dictionary
-    # could also call in en_AU, en_CA, etc.
-    spelly = Spelly.new("en_GB")
+    spelly = Spelly.new("en_US")
 
 A full list of dictionaries can be found here:
 http://wiki.openoffice.org/wiki/Dictionaries#English_.28AU.2CCA.2CGB.2CNZ.2CUS.2CZA.29
 
 Then you can run your spell check against an array of words by simply calling
 
-    > spelly = Spelly.new("en_GB")
+    > spelly = Spelly.new("en_US")
     > words = %w/car bat yardd/
-    => ["car", "bat", "yardd"] 
     > spelly.spell_check words
     => [{:word=>"yardd", :suggest=>["yards", "yard", "yard d"]}] 
 
