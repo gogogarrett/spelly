@@ -1,6 +1,6 @@
 # Spelly
 
-This is a simple to use spell check gem that returns back the mispelt words and their common suggestions.  
+This is a simple to use spell check gem that returns back the misspelled words and their common suggestions.  
 
 ## Installation
 
