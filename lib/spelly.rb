@@ -3,7 +3,8 @@ class Spelly
   attr_accessor :dict
 
   def initialize language
-    path = "#{Gem.loaded_specs['spelly'].full_gem_path}/lib/dict"
+    path = File.expand_path("../lib/dict", File.dirname(__FILE__))
+    # path = "#{Gem.loaded_specs['spelly'].full_gem_path}/lib/dict"
     @dict = Hunspell.new(path, language)
   end
 
