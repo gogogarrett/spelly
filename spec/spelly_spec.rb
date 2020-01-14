@@ -11,7 +11,7 @@ describe Spelly do
     it 'should return suggestions for misspelt words' do
       words = %w[girll boy dog]
       spelly = Spelly.new('en_GB')
-      expect(spelly.spell_check(words)).to eql [{ word: 'girll', suggest: ['grill', 'girl', 'gill', 'girls', 'girl l'] }]
+      expect(spelly.spell_check(words)).to eql [{ word: 'girll', suggest: ['grill', 'girl', 'gill', 'girls','girly', 'girl l'] }]
     end
   end
 
