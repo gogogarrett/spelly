@@ -4,7 +4,7 @@ require_relative '../lib/spelly'
 
 describe Spelly do
   it 'should load a dictionary given en_US language' do
-    expect(Spelly.new('en_US').dict).to be_a_kind_of(Hunspell)
+    expect(Spelly.new('en_US').dict).to be_a_kind_of(FFI::Hunspell::Dictionary)
   end
 
   context '#spell_check en_GB' do
@@ -16,7 +16,7 @@ describe Spelly do
   end
 
   it 'should load a dictionary given pt_BR language' do
-    expect(Spelly.new('pt_BR').dict).to be_a_kind_of(Hunspell)
+    expect(Spelly.new('pt_BR').dict).to be_a_kind_of(FFI::Hunspell::Dictionary)
   end
 
   context '#spell_check pt_PT' do
